@@ -1,0 +1,87 @@
+
+body.dark-theme {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    padding: 20x;
+    background-color: #051d4b;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+}
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-decoration: bold;
+}
+main {
+    padding: 30px;
+}
+#hero{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.service-card {
+    background: #f5b351;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 25px;
+}
+.img{
+    width: 150px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.gallery img {
+    width: 150px;
+    margin: 10px;
+    border-radius: 5px;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+form input, form select, form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #051d4b;
+    color: #ffffff;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out forwards;
+    opacity: 0;
+}
+
+.zoom-in {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.zoom-in.visible {
+    opacity: 1;
+    transform: scale(1);
+}
